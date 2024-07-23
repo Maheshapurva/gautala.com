@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <title>Gautala | Login</title>
+</head>
+<body>
+   <div class="box">
+    <div class="container">
+
+        <div class="top">
+            <span>Have an account?</span>
+            <header>Login</header>
+        </div>
+
+        <div class="input-field">
+            <input type="text" class="input" placeholder="Username" id="email">
+            <i class='bx bx-user' ></i>
+        </div>
+
+        <div class="input-field">
+            <input type="Password" class="input" placeholder="Password" id="password">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="input-field">
+            <input type="submit" class="submit" value="Login" onclick="auth()">
+        </div>
+
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check">
+               <label for="check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="password.html">Forgot password?</a></label>
+            </div>
+        </div>
+        
+        <span id="error-msg" style="color: red;"></span> <!-- Error message will be displayed here -->
+
+    </div>
+</div> 
+<script>
+function auth() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value; 
+    if(email == "gautala" && password == "gautala123") {
+        window.location.href = "gautala2.html"; // Redirect to home page
+    } else {
+        document.getElementById("error-msg").innerHTML = "Invalid Information";
+        return;
+    }
+}
+
+</script> 
+</body>
+</html>

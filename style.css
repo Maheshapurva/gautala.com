@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-color: #e8e8e8;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+section {
+  width: 45%;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #666;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+section.gallery img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section.gallery {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #666;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section.gallery h2 {
+  margin-top: 0;
+  margin-right: auto;
+}
+
+section.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.gallery .images img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  object-fit: cover;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 90%;
+  }
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
